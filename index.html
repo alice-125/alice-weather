@@ -36,9 +36,11 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-4">
-              <h2 id="mainCityName"><br />📍 Perth</h2>
               <br />
-              <h6 class="description">Sunny</h6>
+              <img src="" id="icon" />
+              <h2 id="mainCityName"></h2>
+              <br />
+              <h6 id="description"></h6>
             </div>
             <div class="col-4">
               <h1 class="main-temp">24º</h1>
@@ -47,9 +49,7 @@
               <br />
               <a href id="fahrenheit"> Convert to °F </a>
             </div>
-            <div class="col-4" id="icon">
-              <img src="src/sunset.png" />
-            </div>
+            <div class="col-4" id="icon"></div>
           </div>
         </div>
         <br />
@@ -57,63 +57,27 @@
         <div class="container text-center">
           <div class="row">
             <div class="col">
-              <img src="src/wind.png" /> Wind <br />
+              <img src="src/wind.png" height="30px" /> Wind <br />
               <span class="climate-wind"> 7mph </span>
             </div>
             <div class="col">
-              <img src="src/umbrella.png" /> Rain <br />
-              <span class="climate-rain"> 2mm</span>
-            </div>
-            <div class="col">
-              <img src="src/humid.png" /> Humidity <br />
-              <span class="climate-humidity"> 40% </span>
-            </div>
-            <div class="col">
-              <img src="src/sun.png" /> Feels like <br />
+              <img src="src/sun.png" height="30px" /> Feels like <br />
               <span class="climate-feels"> 25º </span>
+            </div>
+            <div class="col">
+              <img src="src/humid.png" height="30px" /> Humidity <br />
+              <span class="climate-humidity"> 40% </span>
             </div>
           </div>
         </div>
         <br />
       </div>
       <hr />
-      <div class="future">
+      <div class="forecast-data">
         <br />
-        <p class="forecast">Next 6 days</p>
+        <p class="future">Next 6 days</p>
         <br />
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-2">
-              <p class="day">
-                <i class="fa-solid fa-cloud-rain"></i><br />Monday
-              </p>
-              <p class="day-temp">23º / 16º</p>
-            </div>
-            <div class="col-2">
-              <p class="day"><i class="fa-solid fa-cloud"></i><br />Tuesday</p>
-              <p class="day-temp">25º / 18º</p>
-            </div>
-            <div class="col-2">
-              <p class="day"><i class="fa-solid fa-sun"></i><br />Wednesday</p>
-              <p class="day-temp">24º / 19º</p>
-            </div>
-            <div class="col-2">
-              <p class="day">
-                <i class="fa-solid fa-cloud-sun"></i><br />Thursday
-              </p>
-              <p class="day-temp">26º / 18º</p>
-            </div>
-            <div class="col-2">
-              <p class="day"><i class="fa-solid fa-cloud"></i><br />Friday</p>
-              <p class="day-temp">25º / 18º</p>
-            </div>
-            <div class="col-2">
-              <p class="day"><i class="fa-solid fa-sun"></i><br />Saturday</p>
-              <p class="day-temp">24º / 18º</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div id="weeklyForecast"> </div>
     </div>
     <footer>
       Github repo
