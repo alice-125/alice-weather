@@ -12,11 +12,9 @@ body {
 .main-info {
   background-color: #fefefa;
 }
-.search-bar {
-  margin: 25px;
-}
 input {
-  margin: 0;
+  margin: 10px 5px 10px 20px;
+  padding: 0px 10px 0px 10px;
   width: 80%;
   max-width: 100%;
   text-align: center;
@@ -28,7 +26,7 @@ input:focus {
   outline-color: #f76b8a;
 }
 .citySearchButton {
-  margin: auto;
+  margin: 10px;
   width: 100px;
   background: #f76b8a;
   color: #ffffff;
@@ -39,7 +37,9 @@ input:focus {
   color: #f76b8a;
   transition: ease-in-out;
 }
-
+.today {
+  position: fixed right;
+}
 h1 {
   text-align: center;
   font-weight: bold;
