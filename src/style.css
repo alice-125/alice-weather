@@ -91,10 +91,24 @@ a :hover {
 .forecast-data {
   background-color: #ceeaf7;
   border-radius: 20px;
-  height:180px;
+  height:190px;
+}
+.forecast-icon {
+  height: 40px;
+}
+#weeklyForecast {
+  text-align: center;
+}
+.weekly-forecast-temp {
+  width: 100%;
+  text-align: center;
 }
 .future {
   text-align: left;
   font-size: 20px;
   margin: 0 10px;
+}
+footer {
+  text-align: center;
+  font-size: 10px;
 }

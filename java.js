@@ -78,6 +78,7 @@ function displayWeather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  getForecast(response.data.coord);
 }
 
 function showFahrenheitTemperature(event) {
@@ -120,8 +121,10 @@ function displayForecast(response) {
                   class="forecast-icon"
                 /><br />${formatForecastDate(forecastDay.dt)}
               </p>
+              <span class="weekly-forecast-temp">
               <p class="forecast-max">${Math.round(forecastDay.temp.max)}° /</p>
               <p class="forecast-min">${Math.round(forecastDay.temp.min)}°</p>
+              </span>
             </div>
 `;
     }
