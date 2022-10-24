@@ -51,17 +51,15 @@ displayDefault("Sydney");
 //display weather
 function displayWeather(response) {
   celsiusTemperature = response.data.main.temp;
+  celsiusMax = response.data.main.temp_max;
+  celsiusMin = response.data.main.temp_min;
 
   document.querySelector("#mainCityName").innerHTML = ` ${response.data.name}`;
   document.querySelector(".main-temp").innerHTML = `${Math.round(
     celsiusTemperature
   )}º`;
-  document.querySelector(".max").innerHTML = `${Math.round(
-    response.data.main.temp_max
-  )}º / `;
-  document.querySelector(".min").innerHTML = `${Math.round(
-    response.data.main.temp_min
-  )}º`;
+  document.querySelector(".max").innerHTML = `${Math.round(celsiusMax)}º / `;
+  document.querySelector(".min").innerHTML = `${Math.round(celsiusMin)}º`;
   document.querySelector(".climate-wind").innerHTML = `${Math.round(
     response.data.wind.speed
   )}mph`;
@@ -84,8 +82,14 @@ function displayWeather(response) {
 function showFahrenheitTemperature(event) {
   event.preventDefault();
   let mainTemperature = document.querySelector(".main-temp");
+  let mainMax = document.querySelector(".max");
+  let mainMin = document.querySelector(".min");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let fahrenheitMax = (celsiusMax * 9) / 5 + 32;
+  let fahrenheitMin = (celsiusMin * 9) / 5 + 32;
   mainTemperature.innerHTML = `${Math.round(fahrenheitTemperature)}º`;
+  mainMax.innerHTML = `${Math.round(fahrenheitMax)}º /`;
+  mainMin.innerHTML = `${Math.round(fahrenheitMin)}º`;
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
