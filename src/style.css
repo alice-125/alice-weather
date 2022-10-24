@@ -14,7 +14,7 @@ body {
 }
 input {
   margin: 10px 5px 10px 20px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px;
   width: 80%;
   max-width: 100%;
   text-align: center;
@@ -27,7 +27,8 @@ input:focus {
 }
 .citySearchButton {
   margin: 10px 10px 0px 5px;
-  width: 100px;
+  padding: 0px 5px;
+  width: 90px;
   background: #f76b8a;
   color: #ffffff;
   display: inline;
